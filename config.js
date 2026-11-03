@@ -1,7 +1,6 @@
-// Replace empty strings with your program's links when ready.
 window.HOMEROOM = {
   formspreeEndpoint: "https://formspree.io/f/xoeepnpw",
-  essentialEducationUrl: "", // Program-specific student sign-in URL.
+  essentialEducationUrl: "https://app.essentialed.com/start/laureladulted",
   youtubePlaylists: [
     {
       title: "Ged Testing Services",

@@ -71,3 +71,5 @@ tour.addEventListener('cancel',event=>{event.preventDefault();endTour();});
 tour.addEventListener('close',()=>{cancelAnimationFrame(tourFrame);document.documentElement.classList.remove('tour-active');window.scrollTo({top:tourScroll,behavior:'instant'});tourLauncher?.focus({preventScroll:true});});
 window.addEventListener('resize',()=>{if(tour.open){showTourStep();}});
 window.addEventListener('scroll',positionTour,{passive:true});
+
+const todayDate=document.querySelector('#today-date');if(todayDate){const now=new Date();todayDate.textContent=`${now.toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'})}.`;}
