@@ -95,3 +95,25 @@ h1, h2, h3, h4 {
 .tour-link:focus-visible, .welcome .button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
 .routine-steps { margin-bottom: 0; }
 .routine-steps li { font-weight: 400; }
+
+/* Icons inherit the label color and follow the reader's text size. */
+.icon-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.icon-label > span { min-width: 0; }
+.homeroom-icon {
+  display: block;
+  flex: none;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+nav .homeroom-icon { width: 1.25em; height: 1.25em; }
+.practice-strip .homeroom-icon { width: 2.5rem; height: 2.5rem; }
+.practice-strip h2 { margin-bottom: 0.55rem; }
