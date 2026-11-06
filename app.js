@@ -99,7 +99,7 @@ const tourSteps = [
   {
     target: "#hyflex-schedule",
     title: "Go straight to the weekly schedule",
-    text: "This button takes you to the HyFlexKY weekly schedule. Find your class time and follow its joining instructions. You can return to the homeroom afterward.",
+    text: "HyFlexKY offers free, 45-minute online GED prep classes at different times and on different days each week, following a four-week cycle. Use this button to find a class time and joining instructions.",
   },
   {
     target: "#center-hours-title",
@@ -114,7 +114,7 @@ const tourSteps = [
   {
     target: "#contact-ryan",
     title: "You can always ask Ryan",
-    text: "Email ryan@laureladulted.org for help. Ryan responds within 24 hours on weekdays; weekend messages are answered the next weekday. Bookmark the homeroom and use “Start the tour” anytime you want to review.",
+    text: "Questions and appointments are welcome, and all our services are free. Email ryan@laureladulted.org for help. Ryan responds within 24 hours on weekdays; weekend messages are answered the next weekday. Bookmark the homeroom and use “Start the tour” anytime you want to review.",
   },
 ];
 const tour = document.querySelector("#orientation");
