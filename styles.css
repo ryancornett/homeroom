@@ -117,3 +117,42 @@ h1, h2, h3, h4 {
 nav .homeroom-icon { width: 1.25em; height: 1.25em; }
 .practice-strip .homeroom-icon { width: 2.5rem; height: 2.5rem; }
 .practice-strip h2 { margin-bottom: 0.55rem; }
+
+.ryan-intro { width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.25rem; margin-bottom: 1.5rem; }
+
+.ryan-intro img { width: clamp(25%, 100px, 200px); height: auto; border-radius: 12px; align-self:self-end; }
+
+.welcome > p,
+.class-card > p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #welcome.icon-label {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2.25rem;
+    overflow-wrap: normal;
+  }
+
+  #welcome .homeroom-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .class-card > p {
+    max-width: none;
+  }
+
+  header nav {
+    justify-content: flex-start;
+    gap: 0.5rem 1rem;
+  }
+
+  header nav > a,
+  header nav > button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}

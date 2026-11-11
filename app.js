@@ -75,46 +75,19 @@ form.addEventListener("submit", async (event) => {
 // The real page stays visible behind it; the tour never opens links or submits forms.
 const tourSteps = [
   {
-    target: "#routine-title",
-    title: "Start here each day",
-    text: "Make the homeroom your starting place. Check your instructor’s directions in email, texts, or your learning platform. Return here to open your work.",
-  },
-  {
-    target: "#ixl-card",
-    title: "Open your assigned platform",
-    text: "If your instructor assigned IXL, use this card to sign in and practice those skills. Your platform records the work you complete.",
-  },
-  {
-    target: "#essential-card",
-    title: "Using Essential Education?",
-    text: validUrl(config.essentialEducationUrl)
-      ? "Use this card to open Essential Education and continue the lessons your instructor assigned."
-      : "This card is for Essential Education. Its program sign-in link is still being added to this draft. Ask Ryan for your link if you need it.",
-  },
-  {
-    target: "#individual-work h3",
-    title: "Send other assignments by email",
-    text: "For work outside your learning platform, email your file or clear photos to ryan@laureladulted.org. Include your name and the assignment title. Ask Ryan what to do next if you finish or get stuck.",
+    target: "#work .section-heading h2",
+    title: "Find your work",
+    text: "Open IXL or Essential Education if Ryan assigned it to you. For other work, follow the directions under Individual assignments.",
   },
   {
     target: "#hyflex-schedule",
-    title: "Go straight to the weekly schedule",
-    text: "HyFlexKY offers free, 45-minute online GED prep classes at different times and on different days each week, following a four-week cycle. Use this button to find a class time and joining instructions.",
+    title: "Join a free GED class",
+    text: "Select “See the weekly schedule” to find a free, 45-minute HyFlexKY class and see how to join.",
   },
   {
-    target: "#center-hours-title",
-    title: "Plan your visit",
-    text: "The learning center’s hours are listed here in Eastern time. On Tuesdays and Thursdays, the center is closed from 12:30 to 4:00 PM. Use the booking calendar to choose an appointment. Check the center hours here when planning your visit.",
-  },
-  {
-    target: "#sign-in-help",
-    title: "Get help with digital tasks",
-    text: "Open a help question to see short steps for signing in, joining class, finding files, or emailing work. You can read just the steps you need.",
-  },
-  {
-    target: "#contact-ryan",
-    title: "You can always ask Ryan",
-    text: "Questions and appointments are welcome, and all our services are free. Email ryan@laureladulted.org for help. Ryan responds within 24 hours on weekdays; weekend messages are answered the next weekday. Bookmark the homeroom and use “Start the tour” anytime you want to review.",
+    target: "#help h2",
+    title: "Ask Ryan for help",
+    text: "Go to Get help to find answers or send Ryan a message. You're also welcome to schedule time with him.",
   },
 ];
 const tour = document.querySelector("#orientation");
